@@ -24,7 +24,7 @@ print("Mean of the given data = "+ str(mean))
 
 
 #Finding the median
-new_data1.sort()
+new_data.sort()
 if n % 2 == 0:
     position1 = float(new_data[n//2])
     position2 = float(new_data[n//2+1])

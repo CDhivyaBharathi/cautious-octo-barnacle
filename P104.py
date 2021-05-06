@@ -9,7 +9,7 @@ with open('104Project.csv', newline='') as f:
 file_data.pop(0)
 new_data = []
 for i in range(len(file_data)):
-    num = file_data[i][1]
+    num = file_data[i][2]
     new_data.append(float(num))
 
 n = len(new_data)

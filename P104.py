@@ -52,17 +52,38 @@ for i in range(len(file_data2)):
 #Calculating Mode
 data = Counter(new_data2)
 mode_data_for_range = {
-                        "50-60": 0,
-                        "60-70": 0,
-                        "70-80": 0
+                        "75-85": 0,
+                        "85-95": 0,
+                        "95-105": 0,
+                        "105-115": 0,
+                        "115-125": 0,
+                        "125-135": 0,
+                        "135-145": 0,
+                        "145-155": 0,
+                        "155-165": 0,
+                        "165-175": 0
                     }
 for height, occurence in data.items():
-    if 50 < float(height) < 60:
-        mode_data_for_range["50-60"] += occurence
-    elif 60 < float(height) < 70:
-        mode_data_for_range["60-70"] += occurence
-    elif 70 < float(height) < 80:
-        mode_data_for_range["70-80"] += occurence
+    if 75 < float(height) < 85:
+        mode_data_for_range["75-85"] += occurence
+    elif 85 < float(height) < 95:
+        mode_data_for_range["85-95"] += occurence
+    elif 95 < float(height) < 105:
+        mode_data_for_range["95-105"] += occurence
+    elif 105 < float(height) < 115:
+        mode_data_for_range["105-115"] += occurence
+    elif 115 < float(height) < 125:
+        mode_data_for_range["115-125"] += occurence
+    elif 125 < float(height) < 135:
+        mode_data_for_range["125-135"] += occurence
+    elif 135 < float(height) < 145:
+        mode_data_for_range["135-145"] += occurence
+    elif 145 < float(height) < 155:
+        mode_data_for_range["145-155"] += occurence
+    elif 155 < float(height) < 165:
+        mode_data_for_range["155-165"] += occurence
+    elif 165 < float(height) < 175:
+        mode_data_for_range["165-175"] += occurence
 
 mode_range, mode_occurence = 0, 0
 for range, occurence in mode_data_for_range.items():
@@ -70,6 +91,10 @@ for range, occurence in mode_data_for_range.items():
         mode_range, mode_occurence = [int(range.split("-")[0]), int(range.split("-")[1])], occurence
 mode = float((mode_range[0] + mode_range[1]) / 2)
 print(f"Mode is -> {mode:2f}")
+
+
+
+
 
 
 

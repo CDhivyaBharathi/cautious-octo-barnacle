@@ -44,7 +44,7 @@ file_data2.pop(0)
 
 new_data2=[]
 for i in range(len(file_data2)):
-	n_num = file_data2[i][1]
+	n_num = file_data2[i][2]
 	new_data2.append(n_num)
 
 
